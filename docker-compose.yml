@@ -1,0 +1,14 @@
+version: '3'
+services:
+  pre-watch:
+    build: . 
+    container_name: pre-watch
+    volumes:
+      - "/etc/oversight/pre-watch/externalplugins:/app/resources/externalplugins"
+    environment:
+      - PW_OV_VERSION=1
+    restart: always
+    logging:
+      options:
+        max-file: '10'
+        max-size: '50m'

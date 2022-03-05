@@ -1,0 +1,7 @@
+oversight:
+  host: 'oversight-service'
+mongo:
+  host: 'oversight-mongo-db'
+influx:
+  host: 'nms-influxdb'
+
